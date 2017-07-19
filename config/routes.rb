@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     delete "/logout"      => "sessions#destroy"
 
     namespace :v1 do
+      get 'api-docs' => redirect('/swagger/dist/index.html?url=/apidocs/api-docs.json')
+
       resources :schools
     end
 

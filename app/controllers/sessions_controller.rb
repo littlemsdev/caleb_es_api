@@ -1,4 +1,4 @@
-class SessionsController < ApiController
+class SessionsController < ApplicationController
   skip_before_action :require_token_authentication, only: [:create], raise: false
 
   def create

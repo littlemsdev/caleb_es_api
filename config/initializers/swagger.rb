@@ -3,6 +3,11 @@ class Swagger::Docs::Config
     # Make a distinction between the APIs and API documentation paths.
     "apidocs/#{path}"
   end
+
+  def self.base_api_controller
+    ActionController::API
+  end
+  
 end
 
 

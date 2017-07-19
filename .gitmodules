@@ -1,0 +1,4 @@
+[submodule "public/swagger"]
+	path = public/swagger
+	url = https://github.com/leeshinyi/swagger-ui.git
+        branch = nevaya
